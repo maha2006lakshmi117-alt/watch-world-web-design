@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch store</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🕰️ Watch World</h1>
+        
+         <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      🛒 Cart: <span id="cart-count">0</span>
+    </div>
+  </header>
+<section id="home" class="home-content">
+  <div class="overlay">
+    <h2>Welcome to Watch World</h2>
+    <p>Discover the finest collection of watches for every style and occasion.</p>
+    <img src= "../pics/time1.jpg" alt="Featured Watch" width="600px" height="400px">
+    <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">SHOP NOW</button>
+    <div class="Features">
+      <div class="Feature-card">
+        <h3>Premium quality</h3>
+        <p>Watches crafted with precision and durable materials.</p>
+        </div>
+        <div class="Feature-card">
+          <h3>free shipping</h3>
+          <P>Fast & reliable delivery on all order worldwide.</P>
+        </div>
+        <div class="Feature-card">
+          <h3>Trusted by 10k+</h3>
+          <p>Thousand of happy customers across the globe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--products section-->
+   <section id="products" class="product-grid">
+    <div class="product-card">
+      <img src="../pics/watch4.jpg" alt="Watch 1">
+      <h3>Classic Watch</h3>
+      <p>$99.00</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="../pics/watch8.jpg" alt="Watch 2">
+      <h3>Sport Watch</h3>
+      <p>$129.00</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="../pics/watch9.jpg" alt="Watch 3">
+      <h3>Luxury Watch</h3>
+      <p>$199.00</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </section>
+  <br><br>
+  <!--about section-->
+    <section id="about" class="about-content">
+    <h2>About Us</h2>
+    <p>Watch World has been delivering quality watches for over 10 years. 
+       Our mission is to provide timepieces that combine elegance, precision, 
+       and durability at affordable prices.</p>
+    <p>We pride ourselves on customer satisfaction and timeless designs.</p>
+     <h3>Why Choose Us?</h3>
+    <ul>
+      <li>✔ Premium quality materials</li>
+      <li>✔ Elegant designs for every occasion</li>
+      <li>✔ Affordable prices</li>
+      <li>✔ Excellent customer support</li>
+      <li>✔ Fast and secure shipping</li>
+    </ul>
+  </section>
+  <!--contect section-->
+   <section id="contact" class="contact-content">
+    <h2>Contact Us</h2>
+    <p>Email: watch world@gmail.com</p>
+    <p>Phone: +91 775658665585</p>
+    <form>
+      <label>Name:</label><br>  
+      <input type="text" placeholder="Your Name"><br><br>
+      <label>Message:</label><br>
+      <textarea placeholder="Your Message"></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
+  
