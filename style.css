@@ -151,7 +151,7 @@ nav ul li{
 }
 .home-content{
   height: 100vh;
-  background: url(../pics/time1.jpg) no-repeat center center/cover;
+  background: url(./pics/time1.jpg) no-repeat center center/cover;
   position:relative;
   display: flex;
   justify-content: center;
@@ -182,5 +182,6 @@ nav ul li{
   margin-top:40px;
   flex-wrap:wrap;
   justify-self: center;
+
 
 }
